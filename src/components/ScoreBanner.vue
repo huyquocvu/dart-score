@@ -21,6 +21,7 @@ const scores = [20, 19, 18, 17, 16, 15, 'BE']
 .title {
     text-align: center;
 }
+
 .header {
     height: 80px;
     /* background-color: #612d2c; */
@@ -60,6 +61,9 @@ h1 {
 @media (prefers-color-scheme: light) {
     .ScoreBanner {
         background-color: #82ABA1;
+    }
+    .header {
+        background-image: linear-gradient(#b8d8ba, #82ABA1);
     }
 }
 

@@ -74,7 +74,6 @@ const handleSubmit = () => {
 </template>
 
 <style scoped>
-
 input {
     background-color: white;
     color: black;
@@ -153,6 +152,10 @@ h1 {
 @media (prefers-color-scheme: light) {
     .PlayerScoreBanner {
         background-color: #B8E1FF;
+    }
+
+    .header {
+        background-image: linear-gradient(#b8d8ba, #b8e1ff);
     }
 }
 </style>

@@ -17,7 +17,6 @@ const handleReset = () => {
 </template>
 
 <style scoped>
-
 div {
     grid-template-rows: 1fr;
     display: grid;
@@ -55,6 +54,16 @@ span {
 @media (prefers-color-scheme: light) {
     button {
         background-color: #E8AEB7;
+    }
+
+    button:hover {
+        border-color: #344566;
+        background-color: #3e597e;
+    }
+
+    button:active {
+        border-color: #515968;
+        background-color: #053577;
     }
 }
 </style>
