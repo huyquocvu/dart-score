@@ -5,8 +5,10 @@ const scores = [20, 19, 18, 17, 16, 15, 'BE']
 </script>
 
 <template>
-    <div class="ScoreBanner Column">
-        <h1>Scores</h1>
+    <div class="ScoreBanner">
+        <div class="header">
+            <h1>Scores</h1>
+        </div>
         <div class="scores">
             <div class="Cell" v-for="(item, index) in scores">
                 <div class="ScoreBannerText Cell">{{ item }}</div>
@@ -19,16 +21,17 @@ const scores = [20, 19, 18, 17, 16, 15, 'BE']
 .title {
     text-align: center;
 }
-
+.header {
+    height: 80px;
+    /* background-color: #612d2c; */
+    background-image: linear-gradient(#247ba0, #605F5E);
+}
 .ScoreBanner {
     display: grid;
     border-color: rgb(9, 255, 0);
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
     background-color: #605F5E;
-    width: 100%;
     height: 100%;
     padding-bottom: 10px;
 }
@@ -50,7 +53,7 @@ const scores = [20, 19, 18, 17, 16, 15, 'BE']
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.3em;
     text-align: center;
 }
 

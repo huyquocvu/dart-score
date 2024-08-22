@@ -5,8 +5,19 @@ import ScoreBanner from './ScoreBanner.vue'
 import Reset from './ResetButton.vue';
 import Winner from './Winner.vue'
 
+const props = defineProps({
+    active: {
+        type: Boolean,
+        default: false
+    }
+})
+
 const reset = ref(false)
 var winner = ref('')
+
+const handleGameStart = () => {
+    // Start game when both players have been entered
+}
 
 const handleResetScores = () => {
     reset.value = true;
@@ -46,7 +57,7 @@ const p2 = ref('Player 2')
     min-width: 500px;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 .ScoreBoard {
     display: grid;

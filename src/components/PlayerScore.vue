@@ -54,12 +54,15 @@ const handleSubmit = () => {
 <template>
     <div class="PlayerScoreBanner">
         <!-- Input field to enter player name, shown only if the name has not been submitted -->
-        <div v-if="!isNameSubmitted" class="submit">
-            <input :value="playerName" @input="handleNameChange" type="text" placeholder="Enter Player Name"
-                class="nameInput" />
-            <button class="nameSubmit" @click="handleSubmit"><span>Enter</span></button>
+        <div class="header">
+            <div v-if="!isNameSubmitted" class="submit">
+                <input @input="handleNameChange" type="text" :placeholder="playerName" class="nameInput" />
+                <button class="nameSubmit" @click="handleSubmit"><span>Enter</span></button>
+            </div>
+            <div v-else class="name">
+                <h1>{{ playerName }}</h1>
+            </div>
         </div>
-        <h1 v-if="isNameSubmitted">{{ playerName }}</h1>
         <!-- Use a key attribute to help Vue track elements -->
         <div class="scoreCard">
             <div class="Cell" v-for="(item, index) in scores" :key="index">
@@ -72,27 +75,47 @@ const handleSubmit = () => {
 
 <style scoped>
 
+input {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
 .PlayerScoreBanner {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     background-color: #A22522;
-    width: auto;
+    /* width: 100%; */
     height: 100%;
     padding-bottom: 10px;
 }
 
+.header {
+    height: 80px;
+    /* background-color: #612d2c; */
+    background-image: linear-gradient(#247ba0, #a22522);
+}
+
 .scoreCard {
     display: grid;
-    grid-template-columns: 1fr; /* Adjust this to match ScoreBanner layout */
-    gap: 10px; /* Adjust spacing between score cells */
+    grid-template-columns: 1fr;
+    /* Adjust this to match ScoreBanner layout */
+    gap: 10px;
+    /* Adjust spacing between score cells */
     justify-items: center;
 }
 
 .submit {
     display: flex;
-    padding: 5px;
+    padding: 10px;
     margin-top: 20px;
+}
+
+.name {
+    display: flex;
+    place-items: center;
+    place-content: center;
 }
 
 .nameInput {
@@ -113,12 +136,12 @@ const handleSubmit = () => {
 }
 
 .Cell {
-  display: grid;
-  place-self: center;
-  place-content: center;
-  place-items: center;
-  width: 9vh;
-  height: 9vh;
+    display: grid;
+    place-self: center;
+    place-content: center;
+    place-items: center;
+    width: 9vh;
+    height: 9vh;
 }
 
 h1 {
