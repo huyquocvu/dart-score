@@ -54,10 +54,14 @@ const p2 = ref('Player 2')
 <style scoped>
 
 .main {
-    min-width: 20%;
+    min-width: 350px;
     align-items: center;
     justify-content: center;
     /* margin: 1rem; */
+    border-width: 1vw;
+    border-style: outset;
+    border-radius: 6vw;
+    border-color: #9a9a9a;
 }
 .ScoreBoard {
     display: grid;
@@ -65,5 +69,7 @@ const p2 = ref('Player 2')
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     height: 100%;
+    min-width: 350px;
+    min-height: 100%;
 }
 </style>

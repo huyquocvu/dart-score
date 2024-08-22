@@ -103,6 +103,7 @@ input {
     gap: 10px;
     /* Adjust spacing between score cells */
     justify-items: center;
+    background: #A22522;
 }
 
 .submit {
@@ -152,6 +153,10 @@ h1 {
 @media (prefers-color-scheme: light) {
     .PlayerScoreBanner {
         background-color: #B8E1FF;
+    }
+
+    .scoreCard {
+        background-color: #b8e1ff;
     }
 
     .header {

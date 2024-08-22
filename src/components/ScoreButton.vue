@@ -39,12 +39,14 @@ const hitImage = computed(() => {
 
 <template>
     <button class="PlayerScoreButtonComponent Cell" @click="handleClick"> 
-        <!-- <img src="/dartboard.png" class="buttonBackground" /> -->
         <img class="Cell" v-if="hitImage" :src="hitImage" alt="Hit Indicator"/>
     </button>
 </template>
 
 <style scoped>
+button {
+    border-width: 1vw;
+}
 .Cell {
   display: grid;
   place-self: center;
@@ -52,14 +54,6 @@ const hitImage = computed(() => {
   place-items: center;
   width: 11vh;
   height: 11vh;
-}
-
-.buttonBackground {
-    position: absolute;
-    width: 10vh;
-    height: 10vh;
-    opacity: 0;
-    animation: fade 2s linear infinite;
 }
 
 @keyframes fade {
@@ -76,6 +70,6 @@ const hitImage = computed(() => {
 }
 
 .PlayerScoreButtonComponent:hover {
-  background-color: #004680;
+  background-color: #09ff00;
 }
 </style>

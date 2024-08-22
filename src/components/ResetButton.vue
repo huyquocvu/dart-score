@@ -30,8 +30,9 @@ button {
     border-bottom-left-radius: 5vw;
     border-bottom-right-radius: 5vw;
     border-color: #1D3461;
-    border-width: 5px;
+    border-width: 1vw;
     background-color: #1F487E;
+    border-style:hidden;
 }
 
 button:hover {

@@ -8,7 +8,6 @@ const props = defineProps({
 </script>
 
 <template>
-    <span>
         <div v-if="winnerName" class="WinnerAlert">
             🎉 {{ winnerName }} wins! 🎉
             <ConfettiExplosion />
@@ -16,34 +15,30 @@ const props = defineProps({
         <div v-else class="WinnerWait">
             Cricket ScoreBoard
         </div>
-    </span>
 </template>
 
 <style scoped>
 .WinnerAlert {
-    display: grid;
-    padding: 20px;
+    padding-bottom: 20px;
     background-color: #4CAF50;
     place-content: center;
     place-self: center;
     color: white;
     text-align: center;
-    font-size: 3rem;
-    margin-top: 20px;
+    font-size: 2rem;
     border-start-start-radius: 5vw;
     border-start-end-radius: 5vw;
+    width: 100%;
 }
 
 .WinnerWait {
-    display: grid;
-    padding: 20px;
+    padding-bottom: 20px;
     background-color: #247BA0;
     place-content: center;
     place-self: center;
     color: white;
     text-align: center;
-    font-size: 3rem;
-    margin-top: 20px;
+    font-size: 2rem;
     border-start-start-radius: 5vw;
     border-start-end-radius: 5vw;
 }
