@@ -68,8 +68,7 @@ const p2 = ref('Player 2')
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     height: 100%;
-    min-width: 350px;
-    min-height: 90vh;
+    min-height: 80vh;
     width: 100%;
 }
 </style>

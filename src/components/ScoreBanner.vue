@@ -23,7 +23,7 @@ const scores = [20, 19, 18, 17, 16, 15, 'BE']
 }
 
 .header {
-    height: 7vw;
+    height: 100%;
     /* background-color: #612d2c; */
     background-image: linear-gradient(#247ba0, #605F5E);
 }
@@ -58,7 +58,8 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 2vh;
+    /* gap: 2vh; */
+    row-gap: 2vh;
 }
 
 @media (prefers-color-scheme: light) {

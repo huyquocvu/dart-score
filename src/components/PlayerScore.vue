@@ -104,8 +104,10 @@ input {
 .scoreCard {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 100%;
     /* Adjust this to match ScoreBanner layout */
-    gap: 2vw;
+    gap: 2vh;
     /* Adjust spacing between score cells */
     justify-items: center;
     background: #A22522;
