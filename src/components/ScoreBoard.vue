@@ -23,8 +23,8 @@ const handleWin = (playerName) => {
     winner.value = playerName;
 }
 
-const p1 = ref('Huy')
-const p2 = ref('Cassidy')
+const p1 = ref('Player 1')
+const p2 = ref('Player 2')
 
 </script>
 
