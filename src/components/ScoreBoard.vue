@@ -54,7 +54,7 @@ const p2 = ref('Player 2')
 <style scoped>
 
 .main {
-    min-width: 500px;
+    min-width: 20%;
     align-items: center;
     justify-content: center;
     /* margin: 1rem; */
