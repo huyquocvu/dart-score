@@ -26,11 +26,11 @@ watch(() => props.reset, (newValue) => {
 const hitImage = computed(() => {
     switch (count.value) {
         case 1:
-            return '/single.svg';
+            return '@/single.svg';
         case 2:
-            return '/double.svg';
+            return '@/double.svg';
         case 3:
-            return '/triple.svg';
+            return '@/triple.svg';
         default:
             return '';
     }
