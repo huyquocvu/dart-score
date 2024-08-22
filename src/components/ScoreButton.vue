@@ -26,16 +26,15 @@ watch(() => props.reset, (newValue) => {
 const hitImage = computed(() => {
     switch (count.value) {
         case 1:
-            return '@/single.svg';
+            return '/dart-score/single.svg';
         case 2:
-            return '@/double.svg';
+            return '/dart-score/double.svg';
         case 3:
-            return '@/triple.svg';
+            return '/dart-score/triple.svg';
         default:
             return '';
     }
 })
-
 </script>
 
 <template>
