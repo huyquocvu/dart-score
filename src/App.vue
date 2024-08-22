@@ -4,15 +4,16 @@ import Footnote from './components/Footer.vue'
 </script>
 
 <template>
-  <div>
+  <div >
     <ScoreBoard />
+    <Footnote />
   </div>
-  <Footnote />
 </template>
 
 <style scoped>
-div {
+.main {
   justify-items: center;
+  height: 100%;
+  width: 100%;
 }
-
 </style>

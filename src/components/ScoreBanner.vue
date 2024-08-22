@@ -23,7 +23,7 @@ const scores = [20, 19, 18, 17, 16, 15, 'BE']
 }
 
 .header {
-    height: 80px;
+    height: 7vw;
     /* background-color: #612d2c; */
     background-image: linear-gradient(#247ba0, #605F5E);
 }
@@ -34,7 +34,7 @@ const scores = [20, 19, 18, 17, 16, 15, 'BE']
     grid-template-rows: auto;
     background-color: #605F5E;
     height: 100%;
-    padding-bottom: 10px;
+    margin-bottom: 11px;
     /* background: linear-gradient(320deg, rgba(66,122,158,1) 0%, rgba(98,94,111,1) 23%, rgba(147,50,37,1) 100%); */
 }
 
@@ -58,7 +58,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 10px;
+    gap: 2vh;
 }
 
 @media (prefers-color-scheme: light) {

@@ -85,22 +85,27 @@ input {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     background-color: #A22522;
-    /* width: 100%; */
+    /* width: fit-content; */
     height: 100%;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .header {
-    height: 80px;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    /* width: fit-content; */
+    height: 100%;
     /* background-color: #612d2c; */
     background-image: linear-gradient(#247ba0, #a22522);
+    
 }
 
 .scoreCard {
     display: grid;
     grid-template-columns: 1fr;
     /* Adjust this to match ScoreBanner layout */
-    gap: 10px;
+    gap: 2vw;
     /* Adjust spacing between score cells */
     justify-items: center;
     background: #A22522;
@@ -108,8 +113,8 @@ input {
 
 .submit {
     display: flex;
-    padding: 10px;
-    margin-top: 20px;
+    /* padding: 10px; */
+    /* margin-top: 2vh; */
 }
 
 .name {
@@ -119,8 +124,8 @@ input {
 }
 
 .nameInput {
-    width: 7vh;
-    padding: 5px;
+    width: 20vw;
+    /* padding: 1vh; */
     font-size: 1em;
     align-content: center;
     align-items: center;
