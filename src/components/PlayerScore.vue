@@ -84,10 +84,11 @@ input {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-    background-color: #A22522;
+    background-color: #c23737;
     /* width: fit-content; */
     height: 100%;
-    margin-bottom: 10px;
+    padding-bottom:0.6vh;
+    /* margin-bottom: 10px; */
 }
 
 .header {
@@ -97,7 +98,7 @@ input {
     /* width: fit-content; */
     height: 100%;
     /* background-color: #612d2c; */
-    background-image: linear-gradient(#247ba0, #a22522);
+    background-image: linear-gradient(#247ba0, #c23737);
     
 }
 
@@ -110,7 +111,7 @@ input {
     gap: 2vh;
     /* Adjust spacing between score cells */
     justify-items: center;
-    background: #A22522;
+    background: #c23737;
 }
 
 .submit {

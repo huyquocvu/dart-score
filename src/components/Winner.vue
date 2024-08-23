@@ -8,47 +8,48 @@ const props = defineProps({
 </script>
 
 <template>
-        <div v-if="winnerName" class="WinnerAlert">
-            🎉 {{ winnerName }} wins! 🎉
-            <ConfettiExplosion />
+        <div v-if="winnerName" class="Title Alert">
+            <p>
+                🎉 {{ winnerName }} wins! 🎉
+            </p>
+            <div>
+                <ConfettiExplosion />
+            </div>
         </div>
-        <div v-else class="WinnerWait">
-            Cricket ScoreBoard
+        <div v-else class="Title Wait">
+            <p>
+                Cricket ScoreBoard
+            </p>
         </div>
 </template>
 
 <style scoped>
-.WinnerAlert {
-    padding-bottom: 20px;
-    background-color: #4CAF50;
-    place-content: center;
-    place-self: center;
+.Title {
+    /* place-content: center; */
+    /* place-self:center; */
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 4ch;
     border-start-start-radius: 5vw;
     border-start-end-radius: 5vw;
     width: 100%;
+    height: 6vh;
 }
 
-.WinnerWait {
-    padding-bottom: 20px;
+.Alert {
+    background-color: #4CAF50;
+}
+
+.Wait {
     background-color: #247BA0;
-    place-content: center;
-    place-self: center;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    border-start-start-radius: 5vw;
-    border-start-end-radius: 5vw;
 }
 
 @media (prefers-color-scheme: light) {
-    .WinnerAlert {
+    .Alert {
         background-color: #94FBAB;
     }
 
-    .WinnerWait {
+    .Wait {
         background-color: #B8D8BA;
         color: #0C120C;
     }

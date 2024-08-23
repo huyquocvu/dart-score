@@ -47,6 +47,7 @@ const p2 = ref('Player 2')
             <ScoreBanner />
             <PlayerScore v-model:playerName="p2" :reset="reset" :onWin="handleWin" @updateName="handleNameChange" />
         </div>
+        <div class="divider"></div>
         <Reset @resetScores="handleResetScores" />
     </div>
 </template>
@@ -60,6 +61,11 @@ const p2 = ref('Player 2')
     height: fit-content;
     align-items: center;
     justify-content: center;
+}
+
+.divider {
+    background-color: #494d5010;
+    height:0.3vh;
 }
 
 .ScoreBoard {

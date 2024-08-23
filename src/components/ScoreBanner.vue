@@ -34,7 +34,8 @@ const scores = [20, 19, 18, 17, 16, 15, 'BE']
     grid-template-rows: auto;
     background-color: #605F5E;
     height: 100%;
-    margin-bottom: 11px;
+    padding-bottom:0.6vh;
+    /* margin-bottom: 11px; */
     /* background: linear-gradient(320deg, rgba(66,122,158,1) 0%, rgba(98,94,111,1) 23%, rgba(147,50,37,1) 100%); */
 }
 
@@ -51,7 +52,6 @@ h1 {
     /* font-size: 2rem; */
     text-align: center;
 }
-
 
 .scores {
     border-color: greenyellow;
